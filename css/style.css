@@ -65,7 +65,7 @@ header nav ul li a {
     text-decoration: none;
     font-size: 15px;
     color: black;
-    background-color: bisque;
+    background-color:rgb(255, 220, 196);
     border: 2px rgb(114, 1, 1) solid;
     border-radius: 5px;
     font-weight: 600;
@@ -73,6 +73,9 @@ header nav ul li a {
     font-style: inherit;
     margin: 10px;
     padding: 3px;
+} header nav ul li a:hover{
+    background-color:rgb(114, 1, 1);
+    color: beige;
 }
 
 header section h2 {
@@ -111,7 +114,8 @@ header section h2 {
 
 .hero {
     width: 100%;
-    height: 800px;
+    height: auto;
+    padding-bottom: 40px;
 }
 
 .titulo {
@@ -142,9 +146,9 @@ header section h2 {
 .sistemas {
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
+    margin-top: 50px;
+    position: relative;
 }
-
 .sistemas div {
     display: flex;
     justify-content: center;
@@ -156,25 +160,36 @@ header section h2 {
 }
 
 .sistemas div h3 {
-    color: black;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Arvo', serif;
     font-weight: 600;
 }
-
-.sistemas div p {
-    color: rgba(139, 92, 39, 0.815);
-    font-size: 15px;
-    font-family: 'Arvo', serif;
-    font-weight: 500;
+.sistemas h3{
+    position: absolute;
+    bottom: 80px;
 }
-
+.sistemas p{
+    width:260px;
+    color:whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+.sistemas p{
+    position: absolute;
+    bottom: 0px;
+}
 .sistemas div img {
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 550px;
 }
-
 
 
 
@@ -184,7 +199,7 @@ header section h2 {
 
 /*------------INICIO PAAGINA DE PRODUCTOS-------------*/
 /*------------INICIO PAAGINA DE PRODUCTOS-------------*/
-/*------------INICIO PAAGINA DE PRODUCTOS-------------*/
+/*---push---------INICIO PAAGINA DE PRODUCTOS-------------*/
 
 
 .productos h2{
@@ -205,7 +220,8 @@ header section h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
-    gap: 15px;
+    gap: 15px; 
+    flex-wrap: wrap;
 }
 .grid-container .cero{
     width: 100%;
@@ -213,10 +229,10 @@ header section h2 {
     
 }
 .grid-container h2{
-    background-color: rgba(255, 228, 196, 0.507);
+    background-color:rgba(114, 1, 1, 0.938);
     border: 2px black solid;
     border-radius: 10px;
-    color: rgb(114, 1, 1);
+    color: bisque;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: 600;
@@ -227,22 +243,37 @@ header section h2 {
     margin-bottom: 40px;
     margin-left: 10px;
 }
-.grid-container .ceromenos{
+.grid-container .cerocero h3{
+    color:bisque;
+    background-color:rgba(114, 1, 1, 0.938) ;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    padding: 5px 0px 5px 0px;
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 30px;
+}
+.grid-container .cero .ceromenos{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 800;
-    height: 40px;
-    color: black;
-    padding: 5px 10px 5px 10px;
-    margin: 20px;
-    text-align: center;
+        padding-top: 30px;
+}
+.grid-container .cero .ceromenos a{
     text-decoration: none;
-    border: 2px black solid; 
+    text-align: center;
+    color: bisque;
+    width: 200px;
+    height: 30px;
+    border: 2px black solid;
     border-radius: 5px;
+    background-color:rgba(114, 1, 1, 0.938);
+    padding: 5px 10px 5px 10px;
+    margin-top: 30px;
 }
 .grid-container .ceromas{
     display: flex;
@@ -254,7 +285,8 @@ header section h2 {
 .grid-container .ceromas h3{
     width: 200px;
     height: 50px;
-    color: rgb(126, 7, 7);
+    color:bisque;
+    background-color:rgba(114, 1, 1, 0.938) ;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
@@ -297,17 +329,7 @@ header section h2 {
     flex-direction: column;
     margin-top: 40px;
 }
-.grid-container .cerocero h3{
-    color: black;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
-    padding: 5px 0px 5px 0px;
-    border: 2px black solid;
-    border-radius: 5px;
-    width: 200px;
-    margin-top: 30px;
-}
+
 .grid-container .uno{
     color:rgb(126, 7, 7);
     text-align: center;
@@ -321,48 +343,187 @@ header section h2 {
     text-align: center;
 }
 
+/*-----------------fin de pagina de productos----------------------------------*/
+/*------------------FIN DE PAGINA DE PRODUCTOS------------------------------------*/
+/*---------------------FIN DE PAGINA DE PRODUCTOS-----------------------------------*/
+
+/*--------------------Inicio de pagina de Servicios-------------------------------*/
+/*--------------------- INICIO DE PAGINA DE SERVICIO--------------------------------*/
+/*----------------------INICIO DD PAGINA DE SERVICIO-------------------------------*/
+
+
+main h2{
+    color: black;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+.servicios img{
+    width: 400px;
+    height: 300px;
+}
+.servicios div{
+    margin: 30px 40px 30px 40px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px rgba(100, 4, 17, 0.938) solid;
+    border-radius: 5px;
+    background-color:rgba(42, 52, 87, 0.61);
+}
+.servicios .asesor div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+.servicios .asesor h3{
+    color:bisque;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.servicios .asesor p{
+    color:black;
+    font-size: 20px;font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+.servicios .diseño div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+.servicios .diseño h3{
+    color:bisque;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.servicios .diseño p{
+    color: black;
+    font-size: 20px;font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+.servicios .dimension div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+.servicios .dimension h3{
+    color:bisque;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.servicios .dimension p{
+    color: black;
+    font-size: 20px;font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+.servicios .presupuesto div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+.servicios .presupuesto h3{
+    color:bisque;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.servicios .presupuesto p{
+    color: black;
+    font-size: 20px;font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+.servicios .ejecucion div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+.servicios .ejecucion h3{
+    color:bisque;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.servicios .ejecucion p{
+    color: black;
+    font-size: 20px;font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+.servicios .garantias div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+.servicios .garantias h3{
+    color: bisque;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.servicios .garantias p{
+    color: black;
+    font-size: 20px;font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+.servicios .mantenimiento div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+.servicios .mantenimiento h3{
+    color:bisque;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.servicios .mantenimiento p{
+    color: black;
+    font-size: 20px;font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*------------------------fin pagina de Servicios-------------------------*/
+/*----------------------FIN PAFINA DE SERVICIOS------------------------------*/
+/*------------------------FIN DEPAGINADE SERVICIO-------------------------------*/
 
 
 .principal {
     width: 100%;
-    height: 150px;
+    height: 250px;
     background-color: rgb(49, 94, 95);
     flex-wrap: wrap;
 }
@@ -375,7 +536,7 @@ header section h2 {
 }
 
 .principal div h2 {
-    color: whitesmoke;
+    color:bisque;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     display: inline-block;
@@ -384,11 +545,12 @@ header section h2 {
 }
 
 .principal div p {
-    color:whitesmoke;
+    color:bisque;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 600;
+    margin-bottom: 50px;
 
 }
 
@@ -397,9 +559,7 @@ header section h2 {
     width: 625px;
     height: 400px;
     margin-left: 50px;
-    border: 3px black solid;
 }
-
 .calderas {
     display: flex;
     justify-content: space-between;
@@ -416,41 +576,64 @@ header section h2 {
 .calderas div {
     width: 625px;
     height: 400px;
-    background-color: rgba(12, 92, 129, 0.199);
     margin-right: 50px;
 }
-
-.radiadores img {
-    width: 625px;
-    height: 400px;
-    margin-right: 50px;
-    border: 3px black solid;
+.calderas div h3{
+    color:rgb(114, 1, 1);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.calderas div p{
+    width: 80%;
+    color:rgb(155, 107, 48);
+    font-size: 20px;
+    font-weight: 600;
+    text-align:justify;
+    border-radius: 5px;
 }
 
-.radiadores {
+
+.radiadores{
     display: flex;
     justify-content: space-between;
 }
 
-.radiadores div {
+.radiadores div{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     flex-direction: column;
 }
 
-.radiadores div {
+.radiadores div{
     width: 625px;
     height: 400px;
     margin-left: 50px;
-    background-color: rgba(12, 92, 129, 0.199);
 }
-
+.radiadores img{
+    width: 625px;
+    height: 400px;
+    margin-right: 50px;
+}
+.radiadores div h3{
+    color:rgb(114, 1, 1);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.radiadores div p{
+    width: 80%;
+    color: rgb(155, 107, 48);
+    font-size: 20px;
+    font-weight: 600;
+    text-align:justify;
+    border-radius: 5px;
+}
 .pisoradiante img {
     width: 625px;
     height: 400px;
     margin-left: 50px;
-    border: 3px black solid;
 }
 
 .pisoradiante {
@@ -469,15 +652,31 @@ header section h2 {
     width: 625px;
     height: 400px;
     margin-right: 50px;
-    background-color:  rgba(12, 92, 129, 0.199);
-
 }
+.pisoradiante div h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    color:rgb(114, 1, 1);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.pisoradiante div p{
+    width: 80%;
+    color: rgb(155, 107, 48);
+    font-size: 20px;
+    font-weight: 600;
+    text-align:justify;
+    border-radius: 5px;
+    
+}
+
+
+
 .climatizacionpiscinas img {
     width: 625px;
     height: 400px;
     margin-right: 50px;
-    border: 3px black solid;
-
 }
 
 .climatizacionpiscinas {
@@ -495,8 +694,24 @@ header section h2 {
 .climatizacionpiscinas div {
     width: 625px;
     height: 400px;
-    margin-left: 50px;
-    background-color: rgba(12, 92, 129, 0.199);
+    margin-left: 50px
+}
+.climatizacionpiscinas div h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    color:rgb(114, 1, 1);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.climatizacionpiscinas div p{
+    width: 80%;
+    color: rgb(155, 107, 48);
+    font-size: 20px;
+    font-weight: 600;
+    text-align:justify;
+    border-radius: 5px;
+    
 }
 
 .aguacaliente img {
@@ -504,7 +719,6 @@ header section h2 {
     height: 400px;
     margin-left: 50px;
     background-size: cover;
-    border: 3px black solid;
 }
 
 .aguacaliente {
@@ -523,14 +737,29 @@ header section h2 {
     width: 625px;
     height: 400px;
     margin-right: 50px;
-    background-color: rgba(12, 92, 129, 0.199);
+}
+.aguacaliente div h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    color:rgb(114, 1, 1);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+} 
+.aguacaliente div p{
+    width: 80%;
+    color: rgb(155, 107, 48);
+    font-size: 20px;
+    font-weight: 600;
+    text-align:justify;
+    border-radius: 5px;
 }
 
 .solar img {
     width: 625px;
     height: 400px;
     margin-right: 50px;
-    border: 3px black solid;
+
 }
 
 .solar {
@@ -546,10 +775,24 @@ header section h2 {
 }
 
 .solar div {
-    width: 625px;
+    width: 100%;
     height: 400px;
     margin-left: 50px;
-    background-color: rgba(12, 92, 129, 0.199);
+}
+.solar div h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    color:rgb(114, 1, 1);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.solar div p{
+    width: 80%;
+    color: rgb(155, 107, 48);
+    font-size: 20px;
+    font-weight: 600;
+    text-align:justify;
 }
 
 .desarrollo {
@@ -598,6 +841,11 @@ header section h2 {
     margin-left: 40px;
     margin-right: 40px;
 }
+.botones-1 a:hover{
+    background-color:rgba(100, 4, 17, 0.815);
+    color: bisque;
+
+}
 
 .botones-1 div {
     display: flex;
@@ -611,11 +859,11 @@ header section h2 {
 }
 
 .tarjetasdeproductos div {
-
     border-bottom: 3px black solid;
-    margin: 15px;
+    margin: 25px;
     text-align: center;
 }
+
 
 .tarjetasdeproductos div img {
     width: 150px;
@@ -640,9 +888,13 @@ header section h2 {
     border-radius: 10px;
     text-decoration: none;
     font-size: 20px;
-    color: white;
-    background-color: rgb(139, 9, 0);
-    padding: 5px 5px 0px 5px;
+    color:black;
+    background-color:bisque;
+    border: 2px black solid;
+}
+.tarjetasdeproductos div a:hover{
+    background-color:rgb(114, 1, 1);
+    color:bisque;
 }
 
 .tecnica {
@@ -782,22 +1034,21 @@ header section h2 {
     background-position: center;
     margin-top: 50px;
 }
-.informacion-2{
-    width: 100%;
-    height: 140px;
-    background-color: rgba(0, 0, 0, 0.575);
-    border:3px rgb(114, 1, 1) solid;
-    border-radius: 10px;
-}
-.informacion-2{
+.informacion-2 .informate{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.informacion-2 h2{
+.informacion-2 .informate{
+    border: 3px rgb(114, 1, 1) solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+
+}
+.informacion-2 .informate h2{
     color:bisque;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -818,7 +1069,6 @@ header section h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 .contactame input{
     width: 408px;
@@ -832,6 +1082,12 @@ header section h2 {
     border-radius: 5px;
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.26);
+}
+.contactame input:hover{
+    background-color:rgba(0, 0, 0, 0.63) ;
+}
+.contactame textarea:hover{
+    background-color:rgba(0, 0, 0, 0.63) ;
 }
 .contactame input::placeholder{
     color: black;
@@ -861,26 +1117,22 @@ header section h2 {
     font-weight: 400;
 }
 .contactame #enviar{
-    background-color: rgb(139, 9, 0);
+    background-color:  rgba(0, 0, 0, 0.26);
     font-style: normal;
-    color: beige;
+    color:black;
     
 }
+.contactame #enviar:hover{
+    background-color:rgba(100, 4, 17, 0.938);
+    color: bisque;
+}
+
+
+
+
 /*---------------fin pagina de contacto----------------*/
 /*-----------------FIN DE PAGINA DE CONTACTO-------------*/
 /*-------------------FIN DE AGINA DE CONTACTO---------------*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*----------FIN DEL MAIN---------*/
 
@@ -901,7 +1153,7 @@ footer {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .marcas img {
     width: 100px;
@@ -960,6 +1212,10 @@ footer {
 .redes div a{
     padding: 10px;
 }
+.redes div img:hover{
+    background-color:rgba(0, 0, 0, 0.562) ;
+    border-radius: 5px;
+}
 .titulares .contacto{
     height: 300px;
     display: flex;
@@ -972,11 +1228,17 @@ footer {
     height: 25px;
     font-size: 15px;
     font-weight: 300;
-    color: white;
-    background-color:rgba(114, 1, 1, 0.938) ;
-    border: 2px black solid;
+    color: black;
+    background-color: bisque;
+    border: 2px rgb(114, 1, 1) solid;
     border-radius: 5px;
-}.titulares .contacto p{
+}
+.titulares .contacto button:hover{
+    background-color:rgba(100, 4, 17, 0.815);
+    color: rgb(255, 220, 196);
+}
+
+.titulares .contacto p{
     color: white;
     font-size: 20px;
     font-weight: 400;
