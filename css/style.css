@@ -120,6 +120,7 @@ header section h2 {
 
 .titulo {
     width: 80%;
+    height: 250px;
     text-align: center;
     background-color: rgb(139, 9, 0);
     border: 3px black solid;
@@ -137,7 +138,7 @@ header section h2 {
 
 .titulo p {
     color: white;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
@@ -155,16 +156,17 @@ header section h2 {
     align-items: center;
     width: 300px;
     height: 500px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
-
 }
+
 
 .sistemas div h3 {
     color:white;
     background-color: rgba(0, 0, 0, 0.596);
     border-radius: 5px;
     padding: 0px 5px 0px 5px;
-    text-align: center;
+
     font-size: 25px;
     font-family: 'Arvo', serif;
     font-weight: 600;
@@ -176,8 +178,8 @@ header section h2 {
 .sistemas p{
     width:260px;
     color:whitesmoke;
-    font-size: 18px;
-    text-align: center;
+    font-size: 14px;
+    
     background-color: rgba(0, 0, 0, 0.596);
     border-radius: 5px;
     padding: 0px 5px 0px 5px;
@@ -185,6 +187,7 @@ header section h2 {
 .sistemas p{
     position: absolute;
     bottom: 0px;
+    text-align: center;
 }
 .sistemas div img {
     width: 350px;
@@ -234,13 +237,13 @@ header section h2 {
     border-radius: 10px;
     color: bisque;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 60px;
     margin-left: 10px;
 }
 .grid-container .cerocero h3{
@@ -268,7 +271,7 @@ header section h2 {
     text-align: center;
     color: bisque;
     width: 200px;
-    height: 30px;
+    height: 40px;
     border: 2px black solid;
     border-radius: 5px;
     background-color:rgba(114, 1, 1, 0.938);
@@ -517,8 +520,8 @@ main h2{
 
 
 /*------------------------fin pagina de Servicios-------------------------*/
-/*----------------------FIN PAFINA DE SERVICIOS------------------------------*/
-/*------------------------FIN DEPAGINADE SERVICIO-------------------------------*/
+/*----------------------FIN PAGINA DE SERVICIOS------------------------------*/
+/*------------------------FIN DE PAGINA DE SERVICIO-------------------------------*/
 
 
 .principal {
@@ -842,60 +845,15 @@ main h2{
     margin-right: 40px;
 }
 .botones-1 a:hover{
-    background-color:rgba(100, 4, 17, 0.815);
+    background-color:rgba(100, 4, 17, 0.925);
     color: bisque;
-
 }
-
 .botones-1 div {
     display: flex;
     justify-content: space-between;
 }
 
-.tarjetasdeproductos {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
-.tarjetasdeproductos div {
-    border-bottom: 3px black solid;
-    margin: 25px;
-    text-align: center;
-}
-
-
-.tarjetasdeproductos div img {
-    width: 150px;
-    height: 300px;
-}
-
-.tarjetasdeproductos div h3 {
-    color: black;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.tarjetasdeproductos div p {
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.tarjetasdeproductos div a {
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    color:black;
-    background-color:bisque;
-    border: 2px black solid;
-}
-.tarjetasdeproductos div a:hover{
-    background-color:rgb(114, 1, 1);
-    color:bisque;
-}
 
 .tecnica {
     color: black;
@@ -911,46 +869,39 @@ main h2{
     margin-left: 50px;
     margin-right: 50px;
 }
+.informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.informacion h3{
+    color: rgb(4, 4, 170);
+}
+.filauno{
+    width: 600px;
+}
 
 .filauno div {
-    margin: 30px;
+    margin-bottom: 30px;
+    padding-left: 15px;
 }
 
 .filauno div img {
     width: 180px;
     height: 150px;
 }
-
-.filados div img {
-    width: 180px;
-    height: 150px;
-    background-size: cover;
-}
-
-.filados div {
-    margin: 30px;
-}
-
-.informacion {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.filauno .uno {
-    display: flex;
-}
-
 .filauno div p {
-    width: 400px;
-    font-size: 15px;
+    width: 350px;
+    font-size: 14px;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .filauno div a {
     text-decoration: none;
 }
-
+.filauno .uno {
+    display: flex;
+}
 .filauno .dos {
     display: flex;
 }
@@ -959,28 +910,40 @@ main h2{
     display: flex;
 }
 
-.filados div a {
-    text-decoration: none;
-}
 
+
+
+.filados{
+    width: 600px;
+}
+.filados div {
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+.filados div img {
+    width: 180px;
+    height: 150px;
+    background-size: cover;
+}
 .filados div p {
-    width: 400px;
-    font-size: 15px;
+    width: 350px;
+    font-size: 14px;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.filados div a {
+    text-decoration: none;
+}
 .filados .cuatro {
     display: flex;
 }
-
 .filados .cinco {
     display: flex;
 }
-
 .filados .seis {
     display: flex;
 }
+
 
 .finaldepagina p {
     color: crimson;
@@ -1063,12 +1026,13 @@ main h2{
 }
 .contactame{
     width: 50%;
-    height: 700px;
+    height: 550px;  
     padding-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 .contactame input{
     width: 408px;
