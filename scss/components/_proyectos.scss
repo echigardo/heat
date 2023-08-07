@@ -1,0 +1,156 @@
+
+.proyect{
+    width: 100%;
+    height: 100vh; 
+    background-image: url(../img/back\ proyectos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+.hero{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    .titulo{
+        width: 80%;
+        height: 250px;
+        text-align: center;
+        background-color: rgb(139, 9, 0);
+        border: 3px black solid;
+        border-radius: 5px;
+        margin: 50px auto;
+        h2{
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+        p{
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+    }
+    .sistemas{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        position: relative;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 500px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            a{
+                img{
+                    width: 350px;
+                    height: 550px;
+                }
+                h3{
+                    color:white;
+                    background-color: rgba(0, 0, 0, 0.596);
+                    border-radius: 5px;
+                    padding: 0px 5px 0px 5px;
+                    font-size: 25px;
+                    font-family: 'Arvo', serif;
+                    font-weight: 600;
+                    position: absolute;
+                    bottom: 80px;
+                }
+                p{
+                    width:260px;
+                    color:whitesmoke;
+                    font-size: 14px;
+                    background-color: rgba(0, 0, 0, 0.596);
+                    border-radius: 5px;
+                    padding: 0px 5px 0px 5px;
+                    position: absolute;
+                    bottom: 0px;
+                    text-align: center;
+                }
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 500px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            a{
+                img{
+                    width: 350px;
+                    height: 550px;
+                }
+                h3{
+                    color:white;
+                    background-color: rgba(0, 0, 0, 0.596);
+                    border-radius: 5px;
+                    padding: 0px 5px 0px 5px;
+                    font-size: 25px;
+                    font-family: 'Arvo', serif;
+                    font-weight: 600;
+                    position: absolute;
+                    bottom: 80px;
+                }
+                p{
+                    width:260px;
+                    color:whitesmoke;
+                    font-size: 14px;
+                    background-color: rgba(0, 0, 0, 0.596);
+                    border-radius: 5px;
+                    padding: 0px 5px 0px 5px;
+                    position: absolute;
+                    bottom: 0px;
+                    text-align: center;
+                }
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 500px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            a{
+                img{
+                    width: 350px;
+                    height: 550px;
+                }
+                h3{
+                    color:white;
+                    background-color: rgba(0, 0, 0, 0.596);
+                    border-radius: 5px;
+                    padding: 0px 5px 0px 5px;
+                    font-size: 25px;
+                    font-family: 'Arvo', serif;
+                    font-weight: 600;
+                    position: absolute;
+                    bottom: 80px;
+                }
+                p{
+                    width:260px;
+                    color:whitesmoke;
+                    font-size: 14px;
+                    background-color: rgba(0, 0, 0, 0.596);
+                    border-radius: 5px;
+                    padding: 0px 5px 0px 5px;
+                    position: absolute;
+                    bottom: 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+

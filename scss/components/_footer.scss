@@ -1,0 +1,111 @@
+
+footer{
+    width: 100%;
+    height: 450px;
+    background-color:rgba(14, 95, 82, 0.986);
+        section{
+            .marcas{
+                width: 100%;
+                height: 100px;
+                background-color: rgb(31, 114, 116);
+                display: flex;
+                justify-content:space-evenly;
+                align-items: center;
+                margin-top: 50px;
+                img{
+                    width: 100px;
+                    height: 50px;
+                    border:3px rgb(114, 1, 1) solid ;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .titulares{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content:space-around;
+            align-items:center;
+            .final{
+                    p{
+                        color:white;
+                        font-size: 20px;
+                        font-weight: 400;
+                }
+                    h3{
+                        background-color:rgba(114, 1, 1, 0.938);
+                        border: 2px black solid;
+                        border-radius: 10px;
+                        color:white;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 30px;
+                        font-weight: 800;
+                        padding: 5px;
+                    span{
+                        color: black;
+                    }
+                }
+            }
+            .redes{
+                height: 300px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                div{
+                    a{
+                        padding: 10px;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+            .contacto{
+                height: 300px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                div{
+                    button{
+                        width: 90px;
+                        height: 25px;
+                        font-size: 15px;
+                        font-weight: 300;
+                        color: black;
+                        background-color: bisque;
+                        border: 2px rgb(114, 1, 1) solid;
+                        border-radius: 5px;
+                    }
+                    button{
+                        width: 90px;
+                        height: 25px;
+                        font-size: 15px;
+                        font-weight: 300;
+                        color: black;
+                        background-color: bisque;
+                        border: 2px rgb(114, 1, 1) solid;
+                        border-radius: 5px;
+                        &hover{
+                            background-color:rgba(100, 4, 17, 0.815);
+                            color: rgb(255, 220, 196);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
