@@ -1,22 +1,22 @@
-@import url(font-family: 'Roboto Condensed', sans-serif;); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 /*--------RESET SIEMPRE --------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /*---SELECTOR: M% SERVIA EN CASOS PARTICULARES*/
 /*------CLASS: ME PERITE APLICARLE UN NOMBRE AL PADRE Y AUMENTAR ESPECIFICIDAD AL TIEMPO QUE PUEDO AGRUPAR PROPIEDADES QUE QUIERO VOLVER A REUTIOIZAR*/
-/*---ID: NO ES MUY UTILIAZADO EN CSS, NNOS SERVIRIA MAS QUE NADA PARA ENLACES INTERNOS Y JAVASCRIP */
+/*---ID: NO ES MUY UTILIZADO EN CSS, NOS SERVIRIA MAS QUE NADA PARA ENLACES INTERNOS Y JAVASCRIP */
 
 /* VER PALETAS DE COLORES CLASE31.35*/
 /*-----------INICIO HEADER----*/
+/* !----INICIO DE HEADER---------------*/
 
 
-header {
+header{
     width: 100%;
     height: 100vh;
     background: url(../img/background.png);
@@ -28,8 +28,8 @@ header {
 header section nav {
     display: flex;
     justify-content: space-between;
+    
 }
-
 header nav ul {
     list-style: none;
     margin-top: 40px;
@@ -44,17 +44,20 @@ header section nav a h1 {
     border-radius: 5px;
     padding: 5px;
     color:rgb(114, 1, 1); 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 700;
     margin-left: 40px;
     margin-top: 30px;
+}
+header section nav a h1:hover{
+    background-color:rgb(114, 1, 1);
+    color: beige;
 }
 
 header nav span {
     color: black;
 }
-
 
 header nav ul li a {
     text-decoration: none;
@@ -63,46 +66,56 @@ header nav ul li a {
     background-color:rgb(255, 220, 196);
     border: 2px rgb(114, 1, 1) solid;
     border-radius: 5px;
-    font-weight: 600;
-    font-family: 'Arvo', serif;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: inherit;
     margin: 10px;
     padding: 3px;
-} header nav ul li a:hover{
+} 
+header nav ul li a:hover{
     background-color:rgb(114, 1, 1);
     color: beige;
 }
-
+header .central {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
 header section h2 {
-    color: white;
+    color: bisque;
     font-size: 70px;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto Condensed', sans-serif;
     border: 3px rgb(114, 1, 1) solid;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.336);
+    background-color: rgba(0, 0, 0, 0.575);
     display: inline-block;
     width: 800px;
     height: 80px;
     text-align: center;
 }
-
-.central {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+header .central p{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.575);
+    border: 2px rgb(114, 1, 1) solid;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 
 
+
+/* !----------------FIN DE HEADER---------------*/
 /*-----FIN DE HEADER----------*/
 
 /*-------INICIO DE MAIN--------*/
-
+/* ! ----------------------INICIO DE PAGINA DE PROYECTOS------------------*/
 /*------ INICIO DE PAGINA DE PROYECTOS----------*/
 /*------- INICIO DE PAGINA DE PROYECTOS----------*/
 /*--------- INICIO DE PAGINA DE PROYECTOS---------*/
@@ -116,7 +129,30 @@ header section h2 {
     background-size: cover;
     background-attachment: fixed;
 }
-.hero {
+.proyect .central h2{
+    width: 600px;
+    color:bisque;
+    background-color:rgba(0, 0, 0, 0.596);
+    border: 2px rgb(80, 5, 5) solid;
+    }
+.proyect .central p{
+    width: 600px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color:bisque;
+    background-color:rgba(0, 0, 0, 0.596) ;
+    border: 2px rgb(80, 5, 5)solid;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.proyect .central h3{
+    font-size: 35px;
+    color: black;
+    font-weight: 700;
+}
+.hero { 
     width: 100%;
     height: auto;
     padding-bottom: 40px;
@@ -124,7 +160,7 @@ header section h2 {
 
 .titulo {
     width: 80%;
-    height: 250px;
+    height: 180px;
     text-align: center;
     background-color: rgb(139, 9, 0);
     border: 3px black solid;
@@ -152,7 +188,7 @@ header section h2 {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
-    position: relative;
+    flex-wrap: wrap;
 }
 .sistemas div {
     display: flex;
@@ -160,24 +196,27 @@ header section h2 {
     align-items: center;
     width: 300px;
     height: 500px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+    position: relative;
 }
-
+.sistemas div img {
+    width: 300px;
+    height: 500px;
+}
 
 .sistemas div h3 {
     color:white;
     background-color: rgba(0, 0, 0, 0.596);
     border-radius: 5px;
     padding: 0px 5px 0px 5px;
-
     font-size: 25px;
     font-family: 'Arvo', serif;
     font-weight: 600;
 }
-.sistemas h3{
+.sistemas div h3{
     position: absolute;
     bottom: 80px;
+    width: 100%;
+    text-align: center;
 }
 .sistemas p{
     width:260px;
@@ -190,22 +229,24 @@ header section h2 {
 .sistemas p{
     position: absolute;
     bottom: 0px;
+    width: 100%;
     text-align: center;
 }
-.sistemas div img {
-    width: 350px;
-    height: 550px;
+@media screen and(max-width :850px) {
+    .grid-container{
+        grid-template-columns:  repeat(2,fr);
+        grid-auto-rows: 150px;
+    }
 }
-
-
-
+/* ! ----------------CIERRE PAGINA DE PROYECTOS----------------*/
 /*----------CIERRE PAGINA DE PROYECTOS-------*/
 /*----------CIERRE PAGINA DE PROYECTOS--------*/
 /*----------CIERRE PAGINA DE PROYECTOS--------*/
 
 /*------------INICIO PAAGINA DE PRODUCTOS-------------*/
 /*------------INICIO PAAGINA DE PRODUCTOS-------------*/
-/*---push---------INICIO PAAGINA DE PRODUCTOS-------------*/
+/*---push---------INICIO PAGINA DE PRODUCTOS-------------*/
+/* ! -------------INICIO DE PAGINA DE PRODUCTOS----------------*/
 
 .produc{
     width: 100%;
@@ -221,7 +262,7 @@ header section h2 {
     width: 100%;
     height: 150px;
     font-size: 40px;
-    color: black;
+    color:  rgb(114, 1, 1);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
     text-align: center;
@@ -232,32 +273,36 @@ header section h2 {
 }
 .grid-container{
     width: 100%;
-    height: 2000px;
+    height: 1800px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
     gap: 20px; 
-    flex-wrap: wrap;
+    
 }
 .grid-container .cero{
-    width: 100%;
+    width: 70%;
     height: 1600px;
     
 }
-.grid-container h2{
-    background-color:rgba(114, 1, 1, 0.938);
-    border: 2px black solid;
-    border-radius: 10px;
+.grid-container .cero h3{
+    background-color: rgb(114, 1, 1);
+    border: 2px black  solid;
+    border-radius: 5px;
+    padding: 15px;
     color: bisque;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: 800;
     text-align: center;
     display: flex;
     justify-content:center;
     align-items:center;
-    margin-bottom: 60px;
     margin-left: 10px;
+}
+.grid-container .cero h3:hover{
+    background-color: rgba(255, 228, 196, 0.507);
+    color: rgb(114, 1, 1); 
 }
 .grid-container .cerocero h3{
     color:bisque;
@@ -271,9 +316,6 @@ header section h2 {
     width: 200px;
     margin-top: 30px;
 }
-
-    
-
 
 .grid-container .cero .ceromenos{
         display: flex;
@@ -299,7 +341,6 @@ header section h2 {
     background-color:rgb(114, 1, 1);
     color: beige;
 }
-
 
 .grid-container .ceromas{
     display: flex;
@@ -341,17 +382,16 @@ header section h2 {
     margin-top: 40px;
 }
 
-
 .grid-container .uno{
     color:rgb(126, 7, 7);
     text-align: center;
-    
+}
+.grid-container .uno:hover{
+    width: 320px;
 }
 .grid-container .uno img{
-    width: 80%;
-    height: 80%;
-    border: 2px rgb(43, 35, 35) solid;
-    border-radius: 5px;  
+    width: 70%;
+    height: 70%;
 }
 
 .grid-container .uno h3{
@@ -401,16 +441,13 @@ header section h2 {
     transform: scale(1.1);
 }
 
-
-.grid-container .dos img{
-    width: 80%;
-    height: 80%;
-    border: 2px black solid;
-    border-radius: 5px;
-}
 .grid-container .dos{
     color:rgb(126, 7, 7);
     text-align: center;
+}
+.grid-container .dos img{
+    width: 70%;
+    height: 70%;
 }
 .grid-container .dos h3{
     font-size: 16px;
@@ -460,16 +497,13 @@ header section h2 {
     transform: scale(1.1);
 }
 
-
-.grid-container .tres img{
-    width: 80%;
-    height: 80%;
-    border: 2px black solid; 
-    border: 5px;
-}
 .grid-container .tres{
     color:rgb(126, 7, 7);
     text-align: center;
+}
+.grid-container .tres img{
+    width: 70%;
+    height: 70%;
 }
 .grid-container .tres h3{
     font-size: 16px;
@@ -519,9 +553,47 @@ header section h2 {
     transform: scale(1.1);
 }
 
+@media screen and(max-width :850px) {
+    .grid-container{
+        grid-template-columns:  repeat(2,fr);
+        grid-auto-rows: 150px;
+        .cero{
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+        .uno{
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+        .dos{
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+        .tres{
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+}
+/* cero*/
+ceromenos
+ceromas
+ceromas
+cerocero
+/*uno*/
+/*dos*/
+/*tres*/
 
 
-
+/* !----------------FIN DE PAGINA DE PRODUCTOS-------------*/
 /*-----------------fin de pagina de productos----------------------------------*/
 /*------------------FIN DE PAGINA DE PRODUCTOS------------------------------------*/
 /*---------------------FIN DE PAGINA DE PRODUCTOS-----------------------------------*/
@@ -529,28 +601,46 @@ header section h2 {
 /*--------------------Inicio de pagina de Servicios-------------------------------*/
 /*--------------------- INICIO DE PAGINA DE SERVICIO--------------------------------*/
 /*----------------------INICIO DD PAGINA DE SERVICIO-------------------------------*/
+/* !--------------------INICIO DE PAGINA DE SERVICIO----------------------------*/
 
-.service{
+
+.service-1{
     width: 100%;
     height: 100vh; 
-    background: url(../img/baack\ servicio.png);
+    background-image:url(../img/Arq\ planificando.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-main h2{
-    color: black;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+.service-1 section .central h2{
+    width: 600px;
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 60px ;
+    color: bisque;
     font-weight: 800;
-    text-align: center;
-    margin: 50px 0px 50px 0px;
+    background-color:rgba(0, 0, 0, 0.575);
+    border:  2px rgb(114, 1, 1) solid ;
 }
+.service-1 section .central p{
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    color: bisque;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.575);
+    border:  2px rgb(114, 1, 1) solid ;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
 .servicios img{
     width: 400px;
     height: 300px;
+    border-radius: 10px;
 }
+
 .servicios div{
     margin: 30px 40px 30px 40px;
     display: flex;
@@ -566,19 +656,54 @@ main h2{
     flex-direction: column;
     width:60%;
 }
+/* .servicios .asesor img{
+    transition: 4s;
+}
+.servicios .asesor img:hover{
+    transform:rotateY(180deg);
+}  */
+
 .servicios .asesor h3{
     color:bisque;
     font-size: 35px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
+    animation-name: slidein;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
+    /* animation-iteration-count:infinite; */
+    /* ! SHORT CUT */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-.servicios .asesor p{
+
+@keyframes slidein{
+        /* DESDE */
+        from{
+            margin-right: 100% ;
+            width: 300%;
+        }
+        /* HASTA*/
+        to{
+            margin: 0%;
+            width: 100%;
+        }
+        
+}
+.servicios .asesor p{ 
     color:black;
-    font-size: 20px;font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
-    text-align: center;
+    text-align:justify;
+    padding: 0px 5px 0px 5px;
 }
+.servicios .asesor div p span{
+    color: red;
+}
+
 .servicios .diseño div{
     display: flex;
     justify-content: space-around;
@@ -590,14 +715,31 @@ main h2{
     color:bisque;
     font-size: 35px;
     font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
+    animation-name: slidein;
+    animation-duration: 7s;
+    animation-timing-function:ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
 }
+.servicios .diseño img{
+    transition: 4s;
+}
+.servicios .diseño img:hover{
+    transform:rotateY(180deg);
+} 
+
 .servicios .diseño p{
     color: black;
-    font-size: 20px;font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
-    text-align: center;
+    text-align:justify;
+    padding: 0px 5px 0px 5px;
+}
+.servicios .diseño div p span{
+    color: red;
 }
 .servicios .dimension div{
     display: flex;
@@ -610,12 +752,17 @@ main h2{
     color:bisque;
     font-size: 35px;
     font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
+    animation-name: slidein;
+    animation-duration: 9s;
+    animation-timing-function:ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
 }
 .servicios .dimension p{
     color: black;
     font-size: 20px;font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Roboto Condensed', sans-serif;
     font-style: italic;
     text-align: center;
 }
@@ -631,11 +778,16 @@ main h2{
     font-size: 35px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
+    animation-name: slidein;
+    animation-duration: 11s;
+    animation-timing-function:ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
 }
 .servicios .presupuesto p{
     color: black;
     font-size: 20px;font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     text-align: center;
 }
@@ -651,11 +803,16 @@ main h2{
     font-size: 35px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
+    animation-name: slidein;
+    animation-duration: 12s;
+    animation-timing-function:ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
 }
 .servicios .ejecucion p{
     color: black;
     font-size: 20px;font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     text-align: center;
 }
@@ -671,11 +828,16 @@ main h2{
     font-size: 35px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
+    animation-name: slidein;
+    animation-duration: 13s;
+    animation-timing-function:ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
 }
 .servicios .garantias p{
     color: black;
     font-size: 20px;font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Roboto Condensed', sans-serif;
     font-style: italic;
     text-align: center;
 }
@@ -691,34 +853,47 @@ main h2{
     font-size: 35px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
+    animation-name: slidein;
+    animation-duration: 15s;
+    animation-timing-function:ease-in-out;
+    animation-direction:initial;
+    animation-delay: 1s;
 }
 .servicios .mantenimiento p{
-    color: black;
-    font-size: 20px;font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
-    text-align: center;
+    text-align: justify;
+    padding: 0px  5px 0px 5px;
+}
+.servicios .mantenimiento div p span{
+    color: red;
 }
 
 
 
-
+/* !------------------------FIN DE PAGINA DE SERVCIO--------------------------*/
 /*------------------------fin pagina de Servicios-------------------------*/
 /*----------------------FIN PAGINA DE SERVICIOS------------------------------*/
 /*------------------------FIN DE PAGINA DE SERVICIO-------------------------------*/
+/* !-----------------------MAIN DE INICIO -----------------------------------*/
 
-
-.principal {
+.principal{
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-color: rgb(49, 94, 95);
     flex-wrap: wrap;
 }
 
-.principal div {
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 40px;
+
+.principal div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 6px rgb(80, 5, 5) solid;
     flex-wrap: wrap;
 }
 
@@ -726,27 +901,16 @@ main h2{
     color:bisque;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
-    display: inline-block;
     font-weight: 700;
-    padding: 5px 10px 5px 10px;
 }
-
 .principal div p {
     color:bisque;
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
+    font-style:normal;
     font-weight: 600;
-    margin-bottom: 50px;
-
 }
 
-
-.calderas img {
-    width: 623px;
-    height: 400px;
-    margin-left: 50px;
-}
 .calderas {
     display: flex;
     justify-content: space-between;
@@ -765,7 +929,14 @@ main h2{
     height: 400px;
     margin-right: 50px;
 }
+.calderas img {
+    width: 600px;
+    height: 350px;
+    margin-left: 50px;
+    border:rgba(100, 4, 17, 0.815) double 6px;
+}
 .calderas div h3{
+    font-family:'Roboto Condensed', sans-serif;
     color:rgb(114, 1, 1);
     font-size: 35px;
     font-weight: 700;
@@ -774,7 +945,7 @@ main h2{
 .calderas div p{
     width: 80%;
     color:rgb(155, 107, 48);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align:justify;
     border-radius: 5px;
@@ -799,11 +970,13 @@ main h2{
     margin-left: 50px;
 }
 .radiadores img{
-    width: 625px;
-    height: 400px;
+    width: 600px;
+    height: 350px;
     margin-right: 50px;
+    border:rgba(100, 4, 17, 0.815) double 6px;
 }
 .radiadores div h3{
+    font-family:'Roboto Condensed', sans-serif;
     color:rgb(114, 1, 1);
     font-size: 35px;
     font-weight: 700;
@@ -812,15 +985,10 @@ main h2{
 .radiadores div p{
     width: 80%;
     color: rgb(155, 107, 48);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align:justify;
     border-radius: 5px;
-}
-.pisoradiante img {
-    width: 620px;
-    height: 400px;
-    margin-left: 50px;
 }
 
 .pisoradiante {
@@ -840,8 +1008,15 @@ main h2{
     height: 400px;
     margin-right: 50px;
 }
+.pisoradiante img {
+    width: 600px;
+    height: 350px;
+    margin-left: 50px;
+    border:rgba(100, 4, 17, 0.815) double 6px;
+}
+
 .pisoradiante div h3{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Roboto Condensed', sans-serif;
     font-style:normal;
     color:rgb(114, 1, 1);
     font-size: 35px;
@@ -851,20 +1026,11 @@ main h2{
 .pisoradiante div p{
     width: 80%;
     color: rgb(155, 107, 48);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align:justify;
     border-radius: 5px;
-    
-}
-
-
-
-.climatizacionpiscinas img {
-    width: 625px;
-    height: 400px;
-    margin-right: 50px;
-}
+    }
 
 .climatizacionpiscinas {
     display: flex;
@@ -883,8 +1049,14 @@ main h2{
     height: 400px;
     margin-left: 50px
 }
+.climatizacionpiscinas img {
+    width: 600px;
+    height: 350px;
+    margin-right: 50px;
+    border:rgba(100, 4, 17, 0.815) double 6px;
+}
 .climatizacionpiscinas div h3{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Roboto Condensed', sans-serif;
     font-style:normal;
     color:rgb(114, 1, 1);
     font-size: 35px;
@@ -894,19 +1066,11 @@ main h2{
 .climatizacionpiscinas div p{
     width: 80%;
     color: rgb(155, 107, 48);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align:justify;
     border-radius: 5px;
-    
-}
-
-.aguacaliente img {
-    width: 620px;
-    height: 400px;
-    margin-left: 50px;
-    background-size: cover;
-}
+    }
 
 .aguacaliente {
     display: flex;
@@ -925,8 +1089,15 @@ main h2{
     height: 400px;
     margin-right: 50px;
 }
+.aguacaliente img {
+    width: 600px;
+    height: 350px;
+    margin-left: 50px;
+    background-size: cover;
+    border:rgba(100, 4, 17, 0.815) double 6px;
+}
 .aguacaliente div h3{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Roboto Condensed', sans-serif;
     font-style:normal;
     color:rgb(114, 1, 1);
     font-size: 35px;
@@ -936,19 +1107,11 @@ main h2{
 .aguacaliente div p{
     width: 80%;
     color: rgb(155, 107, 48);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align:justify;
     border-radius: 5px;
 }
-
-.solar img {
-    width: 620px;
-    height: 400px;
-    margin-right: 50px;
-
-}
-
 .solar {
     display: flex;
     justify-content: space-between;
@@ -963,11 +1126,17 @@ main h2{
 
 .solar div {
     width: 100%;
-    height: 400px;
+    height: 350px;
     margin-left: 50px;
 }
+.solar img {
+    width: 600px;
+    height: 400px;
+    margin-right: 50px;
+    border:rgba(100, 4, 17, 0.815) double 6px;
+}
 .solar div h3{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Roboto Condensed', sans-serif;
     font-style:normal;
     color:rgb(114, 1, 1);
     font-size: 35px;
@@ -977,7 +1146,7 @@ main h2{
 .solar div p{
     width: 80%;
     color: rgb(155, 107, 48);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align:justify;
 }
@@ -991,7 +1160,6 @@ main h2{
     border-radius: 10px;
     padding: 10px;
     background-color: rgba(139, 0, 0, 0.918);
-
 }
 
 .desarrollo div h3 {
@@ -1007,16 +1175,14 @@ main h2{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-
 }
 
 .botones-1 {
     color: white;
     font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     margin-top: 70px;
-
 }
 
 .botones-1 a {
@@ -1036,9 +1202,6 @@ main h2{
     display: flex;
     justify-content: space-between;
 }
-
-
-
 .tecnica {
     color: black;
     font-size: 30px;
@@ -1094,9 +1257,6 @@ main h2{
     display: flex;
 }
 
-
-
-
 .filados{
     width: 600px;
 }
@@ -1127,8 +1287,6 @@ main h2{
 .filados .seis {
     display: flex;
 }
-
-
 .finaldepagina p {
     color: crimson;
     font-size: 20px;
@@ -1147,16 +1305,42 @@ main h2{
     margin: 15px;
 }
 
-.finaldepagina iframe {
+.finaldepagina .finish{
+    display: flex;
+    justify-content:space-around;
+}
+.slider{
+    width: 600px;
+    margin: 0;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+}
+.slider ul li{
+    list-style: none;
+}
+.slider ul li img{
     width: 600px;
     height: 343px;
 }
 
-.finaldepagina div {
-    display: flex;
-    justify-content: space-around;
-}
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
 
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
 
 .logofijo {
     position:fixed;
@@ -1169,7 +1353,7 @@ main h2{
 }
 
 
-
+/* !-----------------INICIO DE PAGINA DE CONTACTO-------------------------*/
 /*----------INICIO DE CONTACTO-------------*/
 /*-----------INICIO DE CONTACTO--------------*/
 /*-------------INICIO DE CONTACTO--------------*/
@@ -1289,15 +1473,17 @@ main h2{
 
 
 
-
+/* !----------------FIN DE PAGINA DE CONTACTO---------------------*/
 /*---------------fin pagina de contacto----------------*/
 /*-----------------FIN DE PAGINA DE CONTACTO-------------*/
 /*-------------------FIN DE AGINA DE CONTACTO---------------*/
 
 /*----------FIN DEL MAIN---------*/
+/* !------------FIN DE MAIN DEL INICIO--------------------*/
+
 
 /*--------INICIO DEL FOOTER----------*/
-
+/* !------------INICIO DEL FOOTER----------------*/
 
 
 footer {
@@ -1323,9 +1509,9 @@ footer {
 
 }
 .links{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     list-style: none;
 }
 .links li a{
@@ -1333,8 +1519,8 @@ footer {
     color:bisque;
 }
 .links h4{
-    font-size: 25px;
-    color: bisque;
+    font-size: 20px;
+    color: black;
     font-weight: 800;
     padding-bottom: 20px;
 }
@@ -1350,7 +1536,6 @@ footer {
     height: 40px;
 }
 .titulares .final{
-    height: 300px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -1360,7 +1545,12 @@ footer {
     color:bisque;
     font-size: 15px;
     font-weight: 500;
-    
+}
+.titulares .final h4{
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+    padding-bottom: 10px;
 }
 .titulares .final h3{
     background-color:  rgba(255, 228, 196, 0.507);
@@ -1368,9 +1558,7 @@ footer {
     border-radius: 5px;
     padding: 5px;
     color:rgb(114, 1, 1); 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
-    font-weight: 800;
+    font-family:'Times New Roman', Times, serif;
 }
 .titulares .final span{
     color: black;
@@ -1385,10 +1573,17 @@ footer {
 .redes div a{
     padding: 10px;
 }
-.redes div img:hover{
-    background-color:rgba(0, 0, 0, 0.562) ;
-    border-radius: 5px;
+.redes div a img{
+    transition: 2s;
 }
+.redes div a img:hover{
+    transform: scale(1.2);
+}
+/* rgba(0, 0, 0, 0.562) */
+.redes div img:hover{
+    background-color:rgba(0, 0, 0, 0.432) ;
+    border-radius: 8px;
+} 
 .titulares .contacto{
     height: 300px;
     display: flex;
