@@ -7,29 +7,75 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-.productos{
-    h2{
-        width: 100%;
-        height: 150px;
-        font-size: 40px;
-        color: black;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 800;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: darkgrey;
+    .central{
+        h2{
+            font-size: 40px;
+            color: bisque;
+        }
+        p{
+            font-size: 25px;
+            color: bisque;
+        }
     }
+}
+
+.publicidades{
+        overflow: hidden;
+    .baner{
+        width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(114, 1, 1);
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite ;
+    margin-bottom: 20px;
+            img{
+                border-radius: 10px;
+        }
+            img{
+                border-radius: 10px;
+        }
+            img{
+                border-radius: 10px;
+        }
+            img{
+                border-radius: 10px;
+        }
+            img{
+                border-radius: 10px;
+        }
+            img{
+                border-radius: 10px;
+        }
+            img{
+                border-radius: 10px;
+        }
+            img{
+                border-radius: 10px;
+        }
+    }
+}
+@keyframes slidein{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(1000px);
+    }
+}
+
     .grid-container{
         width: 100%;
-        height: 2500px;
+        height: 1800px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 200px;
-        gap: 15px; 
-        flex-wrap: wrap;
+        gap: 20px; 
         .cero{
             width: 100%;
             height: 1600px;
@@ -197,6 +243,8 @@
         }
     }
     .uno{
+        color:rgb(126, 7, 7);
+        text-align: center;
             img{
                 width: 100%;
                 height: 100%;
@@ -232,7 +280,12 @@
                 text-align: center;
             }
         }
-}
+        .grid-container .uno:hover{
+            width: 320px;
+        }
+
+
+
 
 
 

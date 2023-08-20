@@ -80,32 +80,62 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
+  .produc .central h2 {
+    font-size: 40px;
+    color: bisque; }
+  .produc .central p {
+    font-size: 25px;
+    color: bisque; }
 
-.productos h2 {
-  width: 100%;
-  height: 150px;
-  font-size: 40px;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 800;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: darkgrey; }
+.publicidades {
+  overflow: hidden; }
+  .publicidades .baner {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #720101;
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    margin-bottom: 20px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
+    .publicidades .baner img {
+      border-radius: 10px; }
 
-.productos .grid-container {
+@keyframes slidein {
+  from {
+    transform: translateX(-1000px); }
+  to {
+    transform: translateX(1000px); } }
+
+.grid-container {
   width: 100%;
-  height: 2500px;
+  height: 1800px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 200px;
-  gap: 15px;
-  flex-wrap: wrap; }
-  .productos .grid-container .cero {
+  gap: 20px; }
+  .grid-container .cero {
     width: 100%;
     height: 1600px; }
-    .productos .grid-container .cero h2 {
+    .grid-container .cero h2 {
       background-color: rgba(114, 1, 1, 0.938);
       border: 2px black solid;
       border-radius: 10px;
@@ -119,14 +149,14 @@ header {
       align-items: center;
       margin-bottom: 60px;
       margin-left: 10px; }
-    .productos .grid-container .cero .ceromenos {
+    .grid-container .cero .ceromenos {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       font-size: 20px;
       padding-top: 30px; }
-      .productos .grid-container .cero .ceromenos a {
+      .grid-container .cero .ceromenos a {
         text-decoration: none;
         text-align: center;
         color: bisque;
@@ -137,7 +167,7 @@ header {
         background-color: rgba(114, 1, 1, 0.938);
         padding: 5px 10px 5px 10px;
         margin-top: 30px; }
-      .productos .grid-container .cero .ceromenos a {
+      .grid-container .cero .ceromenos a {
         text-decoration: none;
         text-align: center;
         color: bisque;
@@ -148,7 +178,7 @@ header {
         background-color: rgba(114, 1, 1, 0.938);
         padding: 5px 10px 5px 10px;
         margin-top: 30px; }
-      .productos .grid-container .cero .ceromenos a {
+      .grid-container .cero .ceromenos a {
         text-decoration: none;
         text-align: center;
         color: bisque;
@@ -159,13 +189,13 @@ header {
         background-color: rgba(114, 1, 1, 0.938);
         padding: 5px 10px 5px 10px;
         margin-top: 30px; }
-    .productos .grid-container .cero .ceromas {
+    .grid-container .cero .ceromas {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
       margin-top: 100px; }
-      .productos .grid-container .cero .ceromas h3 {
+      .grid-container .cero .ceromas h3 {
         width: 200px;
         height: 50px;
         color: bisque;
@@ -178,32 +208,32 @@ header {
         border-radius: 5px;
         text-align: center;
         margin-bottom: 40px; }
-      .productos .grid-container .cero .ceromas ul {
+      .grid-container .cero .ceromas ul {
         color: black;
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 500;
         margin-bottom: 40px;
         padding: 5px 10px 5px 10px; }
-        .productos .grid-container .cero .ceromas ul li {
+        .grid-container .cero .ceromas ul li {
           padding: 5px; }
-        .productos .grid-container .cero .ceromas ul li {
+        .grid-container .cero .ceromas ul li {
           padding: 5px; }
-        .productos .grid-container .cero .ceromas ul li {
+        .grid-container .cero .ceromas ul li {
           padding: 5px; }
-        .productos .grid-container .cero .ceromas ul li {
+        .grid-container .cero .ceromas ul li {
           padding: 5px; }
-        .productos .grid-container .cero .ceromas ul li {
+        .grid-container .cero .ceromas ul li {
           padding: 5px; }
-        .productos .grid-container .cero .ceromas ul li {
+        .grid-container .cero .ceromas ul li {
           padding: 5px; }
-    .productos .grid-container .cero .cerocero {
+    .grid-container .cero .cerocero {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       margin-top: 40px; }
-      .productos .grid-container .cero .cerocero h3 {
+      .grid-container .cero .cerocero h3 {
         color: bisque;
         background-color: rgba(114, 1, 1, 0.938);
         font-size: 20px;
@@ -214,7 +244,7 @@ header {
         border-radius: 5px;
         width: 200px;
         margin-top: 30px; }
-      .productos .grid-container .cero .cerocero h3 {
+      .grid-container .cero .cerocero h3 {
         color: bisque;
         background-color: rgba(114, 1, 1, 0.938);
         font-size: 20px;
@@ -225,7 +255,7 @@ header {
         border-radius: 5px;
         width: 200px;
         margin-top: 30px; }
-      .productos .grid-container .cero .cerocero h3 {
+      .grid-container .cero .cerocero h3 {
         color: bisque;
         background-color: rgba(114, 1, 1, 0.938);
         font-size: 20px;
@@ -236,7 +266,7 @@ header {
         border-radius: 5px;
         width: 200px;
         margin-top: 30px; }
-      .productos .grid-container .cero .cerocero h3 {
+      .grid-container .cero .cerocero h3 {
         color: bisque;
         background-color: rgba(114, 1, 1, 0.938);
         font-size: 20px;
@@ -248,35 +278,40 @@ header {
         width: 200px;
         margin-top: 30px; }
 
-.productos .uno img {
-  width: 100%;
-  height: 100%;
-  border: 2px #2b2323 solid; }
-
-.productos .uno h3 {
-  font-size: 20px;
+.uno {
   color: #7e0707;
   text-align: center; }
+  .uno img {
+    width: 100%;
+    height: 100%;
+    border: 2px #2b2323 solid; }
+  .uno h3 {
+    font-size: 20px;
+    color: #7e0707;
+    text-align: center; }
 
-.productos .dos img {
-  width: 100%;
-  height: 100%;
-  border: 2px black solid; }
-
-.productos .dos h3 {
-  font-size: 20px;
-  color: #7e0707;
-  text-align: center; }
-
-.productos .tres img {
+.dos img {
   width: 100%;
   height: 100%;
   border: 2px black solid; }
 
-.productos .tres h3 {
+.dos h3 {
   font-size: 20px;
   color: #7e0707;
   text-align: center; }
+
+.tres img {
+  width: 100%;
+  height: 100%;
+  border: 2px black solid; }
+
+.tres h3 {
+  font-size: 20px;
+  color: #7e0707;
+  text-align: center; }
+
+.grid-container .uno:hover {
+  width: 320px; }
 
 .proyect {
   width: 100%;
@@ -573,6 +608,160 @@ main .servicios .mantenimiento div {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     text-align: center; }
+
+.contac {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/back contacto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.quinta {
+  width: 100%;
+  height: 900px;
+  background-image: url("../img/Planos Arq.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px; }
+  .quinta .informacion-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .quinta .informacion-2 .informate {
+      border: 3px #720101 solid;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.479); }
+      .quinta .informacion-2 .informate h2 {
+        color: bisque;
+        font-size: 30px;
+        font-weight: 800;
+        font-family: 'Times New Roman', Times, serif; }
+      .quinta .informacion-2 .informate p {
+        color: white;
+        width: 800px;
+        font-size: 25px;
+        font-weight: 300;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        display: inline-block; }
+
+.contactame {
+  width: 50%;
+  height: 550px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px; }
+  .contactame form h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+    margin-top: 100px; }
+  .contactame form input {
+    width: 408px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #720101 solid;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.26); }
+  .contactame form input {
+    width: 408px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #720101 solid;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.26); }
+  .contactame form input {
+    width: 408px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #720101 solid;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.26); }
+  .contactame form input {
+    width: 408px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #720101 solid;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.26); }
+  .contactame form textarea {
+    padding: 10px;
+    border: 3px #720101 solid;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 5px; }
+  .contactame form input {
+    width: 408px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #720101 solid;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.26); }
+
+.contactame input:hover {
+  background-color: rgba(0, 0, 0, 0.63); }
+
+.contactame textarea:hover {
+  background-color: rgba(0, 0, 0, 0.63); }
+
+.contactame input::placeholder {
+  color: black;
+  font-weight: 400; }
+
+.contactame textarea {
+  padding: 10px;
+  border: 3px #720101 solid;
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 5px; }
+
+.contactame textarea::placeholder {
+  color: black;
+  font-weight: 400; }
+
+.contactame #enviar {
+  background-color: rgba(0, 0, 0, 0.26);
+  font-style: normal;
+  color: black; }
+
+.contactame #enviar:hover {
+  background-color: rgba(100, 4, 17, 0.938);
+  color: bisque; }
 
 footer {
   width: 100%;
