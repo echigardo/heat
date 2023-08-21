@@ -1025,6 +1025,9 @@ cerocero
     transition: 2s;
     opacity: 0; 
 }
+.content p span{
+    color: red;
+}
 .content a{
     text-decoration: none;
     background-color:rgb(114, 1, 1);
