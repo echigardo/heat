@@ -790,6 +790,8 @@ cerocero
 .servicios .diseño div p span{
     color: red;
 }
+
+
 .servicios .dimension div{
     display: flex;
     justify-content: space-around;
@@ -810,11 +812,18 @@ cerocero
 }
 .servicios .dimension p{
     color: black;
-    font-size: 20px;font-weight: 400;
+    font-size: 16spx;
+    font-weight: 400;
     font-family:'Roboto Condensed', sans-serif;
     font-style: italic;
-    text-align: center;
+    text-align:justify;
+    padding: 0px 5px 0px 5px;
 }
+.servicios .dimension div p span{
+    color: red;
+}
+
+
 .servicios .presupuesto div{
     display: flex;
     justify-content: space-around;
@@ -835,10 +844,16 @@ cerocero
 }
 .servicios .presupuesto p{
     color: black;
-    font-size: 20px;font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
-    text-align: center;
+    text-align: justify;
+    padding: 0px 5px 0px 5px;
+
+}
+.servicios .presupuesto span{
+    color: red;
 }
 .servicios .ejecucion div{
     display: flex;
@@ -860,10 +875,16 @@ cerocero
 }
 .servicios .ejecucion p{
     color: black;
-    font-size: 20px;font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
     font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px 5px 0px 5px;
     font-style: italic;
-    text-align: center;
+    text-align:justify;
+}
+.servicios .ejecucion span{
+    color: red;
+
 }
 .servicios .garantias div{
     display: flex;
@@ -885,10 +906,15 @@ cerocero
 }
 .servicios .garantias p{
     color: black;
-    font-size: 20px;font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
     font-family:'Roboto Condensed', sans-serif;
     font-style: italic;
-    text-align: center;
+    text-align: justify;
+    padding: 0px 5px 0px 5px;
+}
+.servicios .garantias span{
+    color: red;
 }
 .servicios .mantenimiento div{
     display: flex;
@@ -936,7 +962,7 @@ cerocero
 .prueba{
     display: flex;
     justify-content: space-around;
-    background-color:rgb(4, 4, 95);
+    background-color:rgb(70, 14, 14);
 }
 
 
@@ -997,7 +1023,7 @@ cerocero
     margin: 10px auto;
     font-size: 18px;
     transition: 2s;
-    /* opacity: 0; */
+    opacity: 0; 
 }
 .content a{
     text-decoration: none;
@@ -1007,7 +1033,7 @@ cerocero
     display: inline-block;
     margin-top: 10px;
     transition: 2s;
-    /* opacity: 0; */
+    opacity: 0;
 }
 .cards:hover .content{
     height: 100%;
@@ -1022,6 +1048,17 @@ cerocero
 .cards:hover img{
     opacity: 0;
 }
+h5{
+    color: bisque;
+    font-size: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    
+    
+}
 .target-1{
     margin: 0;
     height: 100vh;
@@ -1031,7 +1068,18 @@ cerocero
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 40px;
 }
-
+.especialista{
+    width: 100%;
+    height: 60px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.especialista h5{
+    color: rgb(70, 14, 14);
+    padding-right: 10px;
+}
 
 /*!---------seccion--------------------*/
 /*!---------seccion--------------------*/
@@ -1042,7 +1090,8 @@ cerocero
 .probar{
     display: flex;
     justify-content: space-around;
-    background-color:rgb(4, 4, 95);
+    background-color:rgb(70, 14, 14)
+    ;
 }
 .pisoradiante{
     margin: 0;
@@ -1096,7 +1145,7 @@ cerocero
     margin: 10px auto;
     font-size: 18px;
     transition: 0.5s;
-    /* opacity: 0; */
+    opacity: 0;
 }
 .content a{
     text-decoration: none;
@@ -1106,7 +1155,7 @@ cerocero
     display: inline-block;
     margin-top: 10px;
     transition: 0.5s;
-    /* opacity: 0; */
+    opacity: 0;
 }
 .cards:hover .content{
     height: 100%;
@@ -1138,7 +1187,7 @@ cerocero
 .pruebe{
     display: flex;
     justify-content: space-around;
-    background-color:rgb(4, 4, 95);
+    background-color:rgb(70, 14, 14);
 }
 .aguacaliente{
     margin: 0;
@@ -1196,7 +1245,7 @@ cerocero
     margin: 10px auto;
     font-size: 18px;
     transition: 2s;
-    /* opacity: 0; */
+    opacity: 0;
 } 
 .content a{
     text-decoration: none;
@@ -1206,7 +1255,7 @@ cerocero
     display: inline-block;
     margin-top: 10px;
     transition: 2s;
-    /* opacity: 0; */
+    opacity: 0;
 }
 .cards:hover .content{
     height: 100%;
@@ -1220,6 +1269,17 @@ cerocero
 }
 .cards:hover img{
     opacity: 0;
+}
+.especial{
+    width: 185px;
+    height: 80px;
+    border: 2px bisque solid;
+    border-radius: 10px;
+}
+.especial h5{
+    margin: 0;
+    
+    
 }
 
 .aguacaliente{
@@ -1278,7 +1338,7 @@ cerocero
     margin: 10px auto;
     font-size: 18px;
     transition: 2s;
-    /* opacity: 0; */
+    opacity: 0;
 }
 .content a{
     text-decoration: none;
@@ -1288,7 +1348,7 @@ cerocero
     display: inline-block;
     margin-top: 10px;
     transition: 2s;
-    /* opacity: 0; */
+    opacity: 0;
 }
 .cards:hover .content{
     height: 100%;
@@ -1314,42 +1374,18 @@ cerocero
 /*!--------------------------------------------------------------*/
 
 
-
-.desarrollo {
-    width: 100%;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: 3px black solid;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgba(139, 0, 0, 0.918);
-}
-
-.desarrollo div h3 {
-    color: white;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    padding-bottom: 30px;
-}
-
-.desarrollo p {
-    color: white;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-}
-
-.botones-1 {
+.botones-1{
+    height: 50px;
     color: white;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-    margin-top: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color:rgb(70, 14, 14);
 }
 
-.botones-1 a {
+.botones-1 a{
     text-decoration: none;
     border: 2px black solid;
     background-color: beige;
@@ -1365,6 +1401,7 @@ cerocero
 .botones-1 div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .tecnica {
     color: black;
@@ -1452,8 +1489,9 @@ cerocero
     display: flex;
 }
 .finaldepagina p {
-    color: crimson;
-    font-size: 20px;
+    color:rgb(114, 1, 1);
+    font-size: 30px;
+    font-weight: 600;
     text-align: center;
     padding: 40px;
     margin: 20px;
