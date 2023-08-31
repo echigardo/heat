@@ -331,7 +331,7 @@ header .central p{
     top:0;
 }
 .publicidades .baner{
-    animation: scroll 20s lineaar infinite;
+    animation: scroll 20s linear infinite;
     display: flex;
     width: 3500px;
 }
@@ -342,304 +342,726 @@ header .central p{
 
 .grid-container{
     width: 100%;
-    height: 1800px;
+    height: 2600px;
+    margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 200px;
     gap: 20px; 
+    background-color:rgb(204, 204, 175);
     
 }
-.grid-container .cero{
-    width: 70%;
-    height: 1600px;
-    
-}
-.grid-container .cerocero h3{
-    color:bisque;
-    background-color:rgba(114, 1, 1, 0.938) ;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
-    padding: 5px 0px 5px 0px;
-    border: 2px black solid;
-    border-radius: 5px;
-    width: 200px;
-    margin-top: 30px;
-}
-.grid-container .cero .ceromenos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 20px;
-        padding-top: 30px;
-}
-.grid-container .cero .ceromenos a{
-    text-decoration: none;
-    text-align: center;
-    color:black;
-    width: 200px;
-    height: 40px;
-    border: 2px black solid;
-    border-radius: 5px;
-    background-color:rgb(170, 132, 60);
-    padding: 5px 10px 5px 10px;
-    margin-top: 30px;
-}
-.grid-container .cero .ceromenos a:hover{
-    background-color:rgb(114, 1, 1);
-    color: beige;
-}
 
-.grid-container .ceromas{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-}
-.grid-container .ceromas h3{
-    width: 200px;
-    height: 50px;
-    color:bisque;
-    background-color:rgba(114, 1, 1, 0.938) ;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
-    padding: 5px 10px 5px 10px;
-    border: 2px black solid;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-.grid-container .ceromas ul{
-    color: black;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-    margin-bottom: 40px;
-    padding: 5px 10px 5px 10px ;
-}
-.grid-container .ceromas ul li{
-    padding: 5px;
-}
-.grid-container .cerocero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
-.grid-container .uno{
-    color:rgb(126, 7, 7);
-    text-align: center;
-}
-.grid-container .uno:hover{
-    width: 320px;
-}
-.grid-container .uno img{
-    width: 70%;
-    height: 70%;
-}
-
-.grid-container .uno h3{
-    font-size: 16px;
-    padding-bottom: 15px;
-}
 .grid-container .uno .primero{
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
+    
+}
+.grid-container .uno .primero:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .uno figure img{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+.grid-container .uno figure img:hover{
+    border: 2px red solid;
+    border-radius: 6px;
+    transform: scale(1.1);
+}
+.grid-container .uno .primero .primero-1 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+} 
+.grid-container .uno .primero .primero-1 a:hover{
+color: bisque;
+background-color: rgba(114, 1, 1, 0.562);
+border: 2px bisque solid;
+}
+
+/* .grid-container .uno .primero{
     transition: 1.5s;
 }
 .grid-container .uno .primero:hover{
-    transform: scale(1.1);
-}
+    
+} */
 .grid-container .uno .segundo{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+   
 }
 .grid-container .uno .segundo:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .uno .segundo .segundo-2 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .uno .segundo .segundo-2 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
 .grid-container .uno .tercero{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+   
 }
 .grid-container .uno .tercero:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .uno .tercero .tercero-3 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .uno .tercero .tercero-3 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
 .grid-container .uno .cuarto{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+   
 }
 .grid-container .uno .cuarto:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .uno .cuarto .cuarto-4 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .uno .cuarto .cuarto-4 a:hover {
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
 .grid-container .uno .quinto{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+   
 }
 .grid-container .uno .quinto:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
 }
-.grid-container .uno .sexto{
-    transition: 1.5s;
+.grid-container .uno .quinto .quinto-5 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .uno .quinto .quinto-5 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
+
+}
+/* .grid-container .uno .sexto{
+    width: 70%;
+    height: 450px;
+    margin-left: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    margin-top: 30px;
 }
 .grid-container .uno .sexto:hover{
-    transform: scale(1.1);
-}
-.grid-container .uno .septimo{
-    transition: 1.5s;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+} */
+/* .grid-container .uno .septimo{
+    width: 70%;
+    height: 450px;
+    margin-left: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    margin-top: 30px;
 }
 .grid-container .uno .septimo:hover{
-    transform: scale(1.1);
-}
-
-.grid-container .dos{
-    color:rgb(126, 7, 7);
-    text-align: center;
-}
-.grid-container .dos img{
-    width: 70%;
-    height: 70%;
-}
-.grid-container .dos h3{
-    font-size: 16px;
-    padding-bottom: 15px;
-}
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+} */
 
 .grid-container .dos .octavo{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
 }
 .grid-container .dos .octavo:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
 }
-.grid-container .dos .noveno{
-    transition: 1.5s;
+.grid-container .dos .octavo .octavo-8 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
 }
-.grid-container .dos .noveno:hover{
-    transform: scale(1.1);
+.grid-container .dos .octavo .octavo-8 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
-.grid-container .dos .decimo{
-    transition: 1.5s;
+.grid-container .dos figure img{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
 }
-.grid-container .dos .decimo:hover{
-    transform: scale(1.1);
-}
-.grid-container .dos .decimouno{
-    transition: 1.5s;
-}
-.grid-container .dos .decimouno:hover{
-    transform: scale(1.1);
-}
-.grid-container .dos .decimodos{
-    transition: 1.5s;
-}
-.grid-container  .dos .decimodos:hover{
-    transform: scale(1.1);
-}
-.grid-container .dos .decimotres{
-    transition: 1.5s;
-}
-.grid-container .dos .decimotres:hover{
-    transform: scale(1.1);
-}
-.grid-container .dos .decimocuatro{
-    transition: 1.5s;
-}
-.grid-container .dos .decimocuatro:hover{
+.grid-container .dos figure img:hover{
+    border: 2px red solid;
+    border-radius: 6px;
     transform: scale(1.1);
 }
 
-.grid-container .tres{
-    color:rgb(126, 7, 7);
+.grid-container .dos .noveno{
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
     text-align: center;
 }
-.grid-container .tres img{
+.grid-container .dos .noveno:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .dos .noveno .noveno-9 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .dos .noveno .noveno-9 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
+}
+
+
+.grid-container .dos .decimo{
     width: 70%;
-    height: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
 }
-.grid-container .tres h3{
-    font-size: 16px;
-    padding-bottom: 15px;
+.grid-container .dos .decimo:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
 }
+
+
+.grid-container .dos .decimo .decimo-10 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .dos .decimo .decimo-10 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
+}
+.grid-container .dos .decimouno{
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
+}
+.grid-container .dos .decimouno:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+
+.grid-container .dos .decimouno .decimouno-11 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .dos .decimouno .decimouno-11 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
+}
+
+.grid-container .dos .decimodos{
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
+}
+.grid-container .dos .decimodos:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .dos .decimodos .decimodos-12 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+
+}
+.grid-container .dos .decimodos .decimodos-12 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
+}
+    
+
 .grid-container .tres .decimocinco{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
 }
 .grid-container .tres .decimocinco:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .tres .decimocinco  .decimocinco-15 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+}
+.grid-container .tres .decimocinco  .decimocinco-15 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
+}
+.grid-container .tres figure img{
+    width: 80%;
+    height: 80%;
+    transition: 2s;
+}
+.grid-container .tres figure img:hover{
+    border: 2px red solid;
+    border-radius: 6px;
+    transform: scale(1.06);
 }
 .grid-container .tres .decimoseis{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
 }
 .grid-container .tres .decimoseis:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .tres .decimoseis .decimoseis-16 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    transition: 3s;
+    padding: 0px 5px 0px 5px;
+
+}
+.grid-container .tres .decimoseis .decimoseis-16 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
 .grid-container .tres .decimosiete{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
+    
+    
 }
 .grid-container .tres .decimosiete:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .tres .decimosiete .decimosiete-17 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+}
+.grid-container .tres .decimosiete .decimosiete-17 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
 .grid-container .tres .decimoocho{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
 }
 .grid-container .tres .decimoocho:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
+}
+.grid-container .tres .decimoocho .decimoocho-18 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+}
+.grid-container .tres .decimoocho .decimoocho-18 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
 .grid-container .tres .decimonueve{
-    transition: 1.5s;
+    width: 70%;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px black solid;
+    transition: 2s;
+    color:black;
+    text-align: center;
 }
 .grid-container .tres .decimonueve:hover{
-    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+    background-color:darkslategrey;
+    border: 2px bisque double;
+    color: bisque;
 }
-.grid-container .tres .vigesimo{
-    transition: 1.5s;
+.grid-container .tres .decimonueve .decimonueve-19 a{
+    font-size: 20px;
+    color:rgb(114, 1, 1);
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    transition: 3s;
+}
+.grid-container .tres .decimonueve .decimonueve-19 a:hover{
+    color: bisque;
+    background-color: rgba(114, 1, 1, 0.562);
+    border: 2px bisque solid;
 }
 
-.grid-container .tres .vigesimo:hover{
-    transform: scale(1.1);
-}
-.grid-container .tres .vigesimouno{
-    transition: 1.5s;
-}
-.grid-container .tres .vigesimouno:hover{
-    transform: scale(1.1);
-}
 
-@media screen and(max-width :850px) {
-    .grid-container{
-        grid-template-columns:  repeat(2,fr);
-        grid-auto-rows: 150px;
-        .cero{
-            img{
-                width: 50%;
-                height: 50%;
-            }
-        }
-        .uno{
-            img{
-                width: 50%;
-                height: 50%;
-            }
-        }
-        .dos{
-            img{
-                width: 50%;
-                height: 50%;
-            }
-        }
-        .tres{
-            img{
-                width: 50%;
-                height: 50%;
-            }
-        }
-    }
-}
-/* cero*/
-ceromenos
-ceromas
-ceromas
-cerocero
-/*uno*/
-/*dos*/
-/*tres*/
+
+
+
+
 
 
 /* !----------------FIN DE PAGINA DE PRODUCTOS-------------*/
